@@ -1,0 +1,33 @@
+.blogContainer{
+    width:100%;
+    min-height: 100%;
+    display: flex;
+    background: black;
+    justify-content: center;
+    padding: 20px;
+  }
+  .childContainer{
+    width: 350px;
+    height: 550px;
+    background:rgb(249, 58, 58);
+    border-radius: 40px;
+    margin: 15px; 
+    border : 1px solid #f2d709;
+  }
+  .blogTitle{
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    font-weight: bolder;
+    padding-top: 15px;
+    text-decoration: underline;
+  }
+  .headings{
+    color:black;
+    font-size:18px;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-weight: 400;
+  }
