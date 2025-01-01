@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 export default function OrderSection() {
-  const [comments, setComments] : any = useState([]);
-  const [newComment, setNewComment] : any = useState("");
+  const [comments, setComments] = useState<string[]>([]);
+  const [newComment, setNewComment]= useState<string>("");
 
-  const handleAddComment = (e : any ) => {
+  const handleAddComment = (e :  React.FormEvent) => {
     e.preventDefault();
     if (!newComment.trim()) return;
     setComments([...comments, newComment]);
