@@ -130,7 +130,7 @@ export default function OrderSection() {
             {comments.length === 0 ? (
               <p className="text-gray-400">No comments yet. Be the first to comment!</p>
             ) : (
-              comments.map((comment:any, index:any) => (
+              comments.map((comment, index) => (
                 <div
                   key={index}
                   className="p-4 bg-gray-400 text-black rounded shadow-md border border-gray-600"
