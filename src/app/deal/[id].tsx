@@ -1,4 +1,5 @@
 import { deals } from "../data/deal";
+import { Deal } from "../data/deal";
 import Link from "next/link";
 export async function getStaticPaths() {
   const paths = deals.map((deal) => ({
@@ -12,7 +13,7 @@ export async function getStaticProps({ params}: { params: { id: string } }) {
   return { props: { deal } };
 }
 
-export default function DealPage({ deal} : { deal: any } ){
+export default function DealPage({ deal} : { deal: Deal } ){
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-4">{deal.title}</h1>

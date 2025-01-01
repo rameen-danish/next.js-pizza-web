@@ -1,4 +1,10 @@
-export const deals = [
+export interface Deal {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+  }
+export const deals : Deal[] = [
     {
       id: "deal1",
       title: "Deal 01",
