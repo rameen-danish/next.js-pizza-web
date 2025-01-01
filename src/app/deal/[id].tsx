@@ -7,12 +7,12 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params}:any) {
+export async function getStaticProps({ params}: { params: { id: string } }) {
   const deal = deals.find((deal) => deal.id === params.id);
   return { props: { deal } };
 }
 
-export default function DealPage({ deal }:any) {
+export default function DealPage({ deal} : { deal: any } ){
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-4">{deal.title}</h1>

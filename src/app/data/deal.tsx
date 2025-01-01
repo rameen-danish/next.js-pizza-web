@@ -35,5 +35,5 @@ export const deals = [
       description: "1 Large pizza,1 Reg pizza,1 ltr Drink",
       image: "deal6.webp",
     },
-  ];
+];
   
